@@ -1,5 +1,14 @@
 # Fask Microservice Versioning Example
 
+[![codecov](https://codecov.io/gh/juniors90/microservice-versioning-example/branch/main/graph/badge.svg?token=XBXBOMoQUi)](https://codecov.io/gh/juniors90/microservice-versioning-example)
+[![Build status](https://github.com/juniors90/microservice-versioning-example/actions/workflows/flask.yml/badge.svg)](https://github.com/juniors90/microservice-versioning-example/actions)
+[![GitHub issues](https://img.shields.io/github/issues/juniors90/microservice-versioning-example)](https://github.com/juniors90/microservice-versioning-example/issues)
+[![GitHub forks](https://img.shields.io/github/forks/juniors90/microservice-versioning-example)](https://github.com/juniors90/microservice-versioning-example/network)
+[![GitHub stars](https://img.shields.io/github/stars/juniors90/microservice-versioning-example)](https://github.com/juniors90/microservice-versioning-example/stargazers)
+[![GitHub license](https://img.shields.io/github/license/juniors90/microservice-versioning-example)](https://github.com/juniors90/microservice-versioning-example/blob/main/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/juniors90/microservice-versioning-example?color=green)](https://github.com/juniors90/microservice-versioning-example/graphs/contributors)
+[![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 Code built following Real Python tutorials:
 
 - [Python REST APIs With Flask, Connexion, and SQLAlchemy – Part 1](https://realpython.com/flask-connexion-rest-api/)

@@ -1,0 +1,7 @@
+-r application.in
+-r styles.in
+-r coverage.in
+-r production.in
+pip-tools
+black
+python-dotenv

@@ -1,0 +1,7 @@
+[tool.black]
+line-length = 79
+target-version = ['py38']
+
+[tool.isort]
+skip = [".gitignore", ".dockerignore"]
+extend_skip = [".md", ".json", ".html"]

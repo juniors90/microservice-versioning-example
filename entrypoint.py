@@ -7,11 +7,13 @@ from application import create_app, db
 from application.models.person import Person
 from application.models.note import Note
 from tests.build_database import mock_db
-from dotenv import load_dotenv
 
-load_dotenv()
 
-environment = os.getenv("OPENPATCH_MODE", "development")
+environment = os.getenv("APIREST_MODE", "development")
+
+if environment == "development":
+    from dotenv import load_dotenv
+    load_dotenv()
 
 if environment == "production":
     import sentry_sdk

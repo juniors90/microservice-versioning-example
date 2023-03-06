@@ -23,7 +23,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: "Set environment variables"
     - run: |
-        APIREST_MODE=${{ secrets.APIREST_MODE }}
+        export APIREST_MODE="${{ secrets.APIREST_MODE }}"
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip

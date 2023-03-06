@@ -12,5 +12,6 @@ if __name__ == "__main__":
         cov.save()
         cov.report()
         cov.html_report(directory="coverage_report")
+        cov.xml_report(outfile="coverage.xml")
         sys.exit(0)
     sys.exit(1)

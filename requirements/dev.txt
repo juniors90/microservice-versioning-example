@@ -119,6 +119,8 @@ pyproject-hooks==1.0.0
     # via build
 pyrsistent==0.19.3
     # via jsonschema
+python-dotenv==1.0.0
+    # via -r dev.in
 pyyaml==6.0
     # via
     #   clickclick

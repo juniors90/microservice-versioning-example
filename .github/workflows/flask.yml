@@ -51,17 +51,12 @@ jobs:
         export APIREST_ORIGINS="*"
         export SENTRY_DSN=""
         python -m unittest
-    - name: Upload coverage reports to Codecov
-      run: |
-        export FLASK_APP="entrypoint.py"
-        export FLASK_DEBUG="True"
-        export APIREST_MOCK="True"
-        export APIREST_MODE="development"
-        export APIREST_DB="sqlite:///./development.db"
-        export APIREST_PRODUCTION_DB="sqlite:///./production.db"
-        export APIREST_TEST_DB="sqlite:///./test.db"
-        export APIREST_AUTHENTIFICATION_SERVICE="https://api.rest.app/authentification"
-        export APIREST_ORIGINS="*"
-        export SENTRY_DSN=""
-        python -m unittest
-        uses: codecov/codecov-action@v3
+    - name: Upload Coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./coverage.xml
+        directory: ./coverage/reports/
+        env_vars: OS,PYTHON
+        name: codecov-umbrella
+        fail_ci_if_error: false
+        verbose: true

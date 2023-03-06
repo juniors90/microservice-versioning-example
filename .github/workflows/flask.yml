@@ -6,18 +6,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-  FLASK_APP="entrypoint.py"
-  FLASK_DEBUG=True
-  APIREST_MOCK="True"
-  APIREST_MODE="development"
-  APIREST_DB="sqlite:///./development.db"
-  APIREST_PRODUCTION_DB="sqlite:///./production.db"
-  APIREST_TEST_DB="sqlite:///./test.db"
-  APIREST_AUTHENTIFICATION_SERVICE="https://api.rest.app/authentification"
-  APIREST_ORIGINS="*"
-  SENTRY_DSN=""
-
 jobs:
   build:
 
@@ -40,7 +28,7 @@ jobs:
     - name: Run Tests with Flask CLI
       run: |
         export FLASK_APP="entrypoint.py"
-        export FLASK_DEBUG=True
+        export FLASK_DEBUG="True"
         export APIREST_MOCK="True"
         export APIREST_MODE="development"
         export APIREST_DB="sqlite:///./development.db"

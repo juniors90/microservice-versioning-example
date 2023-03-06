@@ -55,7 +55,8 @@ home_html = """
 
 @app.route("/")
 def home():
-    people = Person.query.all()
+    #people = Person.query.all()
+    people = db.session.execute(db.select(Person)).scalars()
     return render_template_string(home_html, people=people)
 
 

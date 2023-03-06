@@ -50,7 +50,7 @@ jobs:
         export APIREST_AUTHENTIFICATION_SERVICE="https://api.rest.app/authentification"
         export APIREST_ORIGINS="*"
         export SENTRY_DSN=""
-        python -m unittest
+        python -m coverage_report
     - name: Upload Coverage reports to Codecov
       uses: codecov/codecov-action@v3
       with:
